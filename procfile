@@ -1,0 +1,1 @@
+web: gunicorn healthy_recipy_django.wsgi
