@@ -1,11 +1,55 @@
+<h1 align="center">HealthyRecipyApp</h1>
+
+<p align="center">
+<img src="assets/documents/README_docs/responsive-site.png" width="800" height="100%">
+</p>
+
+You can find live site [here](https://mmmm.herokuapp.com/)
+
+# Table of Contents
+
+1. [UX](#ux)
+
+   - [Strategy](#strategy)
+   - [User Stories](#user-stories)
+
+2. [Scope](#scope)
+
+   - [Features](#features)
+   - [Future Features](#future-features)
+
+3. [Structure](#structure)
+
+   - [Sitemap](#sitemap)
+   - [Wireframes](#wireframes)
+   - [Database schema](#database-schema)
+   - [Business Model](#business-model)
+   - [Marketing](#marketing)
+
+4. [Surface](#surface)
+
+5. [Technologies Used](#technologies-used)
+
+6. [Testing](#testing)
+
+7. [Deployment](#deployment)
+
+8. [Credits](#credits)
+
+
 # Welcome to the HealthyRecipy community!
-
-HealthyRecipy is a community-driven project that aims to provide easy access to healthy recipes for individuals looking to maintain a balanced diet, lose weight, or simply enjoy nutritious meals. Our platform encourages users to share their favorite recipes, discover new ones, and customize meals to suit their taste preferences and dietary requirements.
-
 
 # About HealthyRecipy App
 
-## Features
+HealthyRecipy is a community-driven project that aims to provide easy access to healthy recipes for individuals looking to maintain a balanced diet, lose weight, or simply enjoy nutritious meals. Our platform encourages users to share their favorite recipes, discover new ones, and customize meals to suit their taste preferences and dietary requirements.
+
+# UX
+
+## Strategy
+
+Using the core UX principles I envisaged a Strategy, thinking about the features, goals, needs, and  target audience, they would benefit from.
+
+### Features
 
 - **Expansive Recipe Database**: From breakfast to dinner, find recipes that taste great and are good for you.
 - **Customizable Meal Plans**: Tailor your meal plan according to your dietary needs, preferences, and fitness goals.
@@ -14,25 +58,19 @@ HealthyRecipy is a community-driven project that aims to provide easy access to 
 - **Community Contributions**: Share your own recipes with the community and explore creations from other health-conscious cooks.
 - **Cross-Platform Accessibility**: Access HealthyRecipy from any device, ensuring you have your recipes and meal plans handy whether you're at home or on the go.
 
-## Goals
+### Goals
 
 - To make healthy eating accessible and appealing to a wide audience by providing a diverse range of recipes.
 - To foster a supportive community of individuals who are passionate about healthy living and cooking.
 - To empower users with tools and information that aid in making informed dietary choices.
 
-## Challenges
+### Needs
 
-- Ensuring the database contains only recipes that meet our nutritional standards.
-- Continuously updating the platform with new features to enhance user experience and engagement.
-- Keeping the community motivated and engaged in sharing and trying new recipes.
+- An easy-to-use platform to store, categorise, and retrieve recipes. 
+- Quick editing capabilities for personalizing recipes based on preferences. 
+- Mobile-friendly access for convenience while shopping or cooking. 
 
-## Needs
-
-- Active community participation in recipe sharing and feedback.
-- Expert contributions for verifying and enriching the nutritional information of recipes.
-- Technical support to maintain and improve the platform's functionality and user interface.
-
-## Target Audience
+### Target Audience
 
 HealthyRecipy is designed for individuals of all ages who are interested in maintaining a healthy lifestyle through diet. Specifically, our platform caters to:
 
@@ -46,15 +84,14 @@ By addressing the needs and challenges faced by our target audience, HealthyReci
 
 ## User Stories
 
-As a non-logged in user:
+**Epic:Non-logged in user**
 
 |I want to.. | So that I can.. | Acceptance Criteria
 | ----------- | ----------- | ----------- |
 | Create an account | Store my personal recipes | 1: user can create account  2: user can log in  AC 3: user can log out
 | Browse through recipes | Find some new meals ideas | 1: Admin created recipes are available to all users 2: Non logged in users can view admin created recipes 3: Non-logged in users have read only access |
 
-
-As a logged in user:
+**Epic:Logged in User**
 
 |I can.. | So that I can.. | Acceptance Criteria
 | ----------- | ----------- | ----------- |
@@ -69,11 +106,89 @@ As a logged in user:
 | Search my recipes | To quickly find the recipe I want  |  1: Search bar in navigation 2: search bar functionality added 3: Have a variety of parameters to search with |
 | Add recipes to favourites | View my favourite recipes easily |  1: Create add favourite button 2: Apply to user or admin recipes 3: Display these on their own page 4: Have indicator on recipe to skow if favourite or not |
 
-Out of scope for this release:
 
-|I can.. | So that I can.. | Acceptance Criteria
+**Epic: Admin**
+
+| I can... | So that I can... | Acceptance Criteria |
 | ----------- | ----------- | ----------- |
-| Add notes to my recipes  | Record any improvements made | 1: Create note box 2: Be able to add text to this and save without admin approval |
-| Submit my recipe to admin to be available for all users | Share this recipe with everyone on the site | 1: Be able to submit admin recipe request 2: Admin can approve and submit to general site |
-| Share recipes I have created | family and friends can view them  |  1: Share by email 2: Share read only with other users |
+| Create, edit and delete recipes and comments | Manage the site content | **AC1:** Admin can access a form to input new recipe details, including title, description, ingredients, and preparation steps.<br>
+| Access the admin panel | Manage recipes and comments | **AC1:** Admin can log in to the admin panel using their credentials.<br>**AC2:** Upon successful login, admin is directed to the dashboard where they can manage recipes, comments, and site content.<br>**AC3:** Incorrect login attempts are handled gracefully, displaying an error message and the opportunity to retry. |
+| Log out of the admin panel | Disconnect from the website securely | **AC1:** A log-out option is clearly accessible from anywhere within the admin panel.<br>**AC2:** Selecting the log-out option immediately ends the admin session.<br>**AC3:** Upon logging out, the admin is redirected to the login page, ensuring they are fully disconnected. |
+
+
+
+# Scope
+
+## Features
+
+### **Home Page**
+
+_Navigation bar:_
+
+- The navigation bar appears on every page so users can easily navigate through the site
+- Navigation bar has links for 'Home', 'My recipes', 'Healthy Recipes', 'Add Recipe' and icons for login/out, and search bar
+- 'My recipes' link will take the user his/her 'Personalised Home Page' and a 
+
+_Account - Login/Register:_
+
+- The Login/Register feature is located in the upper right corner and offers the user to log in or register for an account as well as log out of the site
+- When the user is logged in links for 'Login' and 'Register' will have access to their personalised recipe book.
+- The admin user has extra access that allow them to add, update and remove recipes from the website
+
+_Footer:_
+
+- Appears on every page and contains Social links
+- Social links are opened in a new tab to avoid dragging users from our site
+
+
+<p align="center">
+<img src="assets/documents/README_docs/gifs/home-page.gif" width="900" height="100%">
+</p>
+
+### **User Profile**
+
+- A logged-in user can access to the Personalised Home Page, this page displayed links to personal details, previous orders and wishlist
+- The personal details page is where the user can update their default shipping/billing address, change email address and password
+- The previous order displays a list of all the orders previously made by the user
+
+
+<p align="center">
+<img src="assets/documents/README_docs/gifs/user-profile.gif" width="900" height="100%">
+</p>
+
+### **Admin**
+
+- Admin can preform full CRUD functionalliy without having to enter the default 'admin panel' from django
+- Admin can add recipes in the account menu from the navigation bar
+- Admin can unsubscribe user
+- Admin can edit/delete recipes from 'Healthy Recipes' page 
+
+
+
+<p align="center">
+<img src="assets/documents/README_docs/gifs/admin.gif" width="900" height="100%">
+</p>
+
+
+### **Healthy Recipes Page**
+
+- The Healthy Recipes page shows all recipes 
+- Each recipe has an image, recipe title, author, method of conservation, ingrdients list, cooking method
+- Each book card takes users to the book details page
+
+<p align="center">
+<img src="assets/documents/README_docs/user-story-testing/epic_navigation/book-list.png" width="900" height="100%">
+</p>
+
+### **Categories**
+
+- Categories dropdown from Navbar, allowing the user to access specific categories
+- Categories:
+  - Board Books
+  - Pitcure Story Books
+  - First Reads
+  - Early Readers
+  - Fiction Books
+  - Non Fiction Books
+
 
