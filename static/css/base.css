@@ -10,7 +10,7 @@
   --light-red: #f60030;
   --red: #ac011c;
   --dark-red: #2d0001;
-  --cream-brown: #b17e4b;
+  --cream-light: #f1e1d0;
   --grey: #4a4a4a;
   --white: #ffffff;
   --white-yellow: #f8f9e4;
@@ -48,7 +48,7 @@ main {
 /* Footer */
 footer {
   flex-shrink: 0;
-  background-color: var(--white-yellow);
+  background-color: var(--) !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -63,7 +63,7 @@ footer .social-icon {
 
 /* Header */
 .navbar {
-  background-color: var(--cream) !important;
+  background-color: var(--cream-light) !important;
   box-shadow: var(--small-box-shadow);
   color: var(--white);
   font-family: truculenta;
@@ -84,4 +84,10 @@ img.logo {
 .active {
   border-bottom: 2px solid var(--red);
   font-weight: 500;
+}
+
+.search-button {
+  background-color: #2d0001;
+  border-color: #4a4a4a; /* Replace with your color */
+  color: #f60030; /* This is for the text color, adjust as needed */
 }
