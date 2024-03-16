@@ -48,7 +48,7 @@ main {
 /* Footer */
 footer {
   flex-shrink: 0;
-  background-color: var(--) !important;
+  background-color: var(--cream-light) !important;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -83,11 +83,20 @@ img.logo {
 
 .active {
   border-bottom: 2px solid var(--red);
-  font-weight: 500;
+  font-weight: 900;
 }
 
 .search-button {
-  background-color: #2d0001;
+  background-color: #f60030;
   border-color: #4a4a4a; /* Replace with your color */
   color: #f60030; /* This is for the text color, adjust as needed */
+}
+
+/* Form */
+
+.form {
+  width: 100%;
+  margin: 3% auto;
+  box-shadow: var(--small-box-shadow);
+  border-radius: 5px;
 }
