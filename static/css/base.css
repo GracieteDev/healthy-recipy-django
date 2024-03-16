@@ -1,81 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-   /* Fonts */
-    --title: 'Montserrat', sans-serif;
-    --main-font: 'Roboto', sans-serif;
+  /* Fonts */
+  --title: 'Montserrat', sans-serif;
+  --main-font: 'Roboto', sans-serif;
 
-    /* Colours*/
-    --background: #f8f9e4;
-    --light-red:#f60030;
-    --red:#ac011c;
-    --dark-red:#2d0001;
-    --cream-brown:#b17e4b;
-    --grey:#4a4a4a;
-    --white:#ffffff;
-    --white-yellow: #f8f9e4;
+  /* Colours*/
+  --background: #f8f9e4;
+  --light-red: #f60030;
+  --red: #ac011c;
+  --dark-red: #2d0001;
+  --cream-brown: #b17e4b;
+  --grey: #4a4a4a;
+  --white: #ffffff;
+  --white-yellow: #f8f9e4;
+  --cream: #c3b299;
 
-    /* Utils */
---small-box-shadow: 1px -1px 7px 0 #4a4a4a; 
---border: 1px solid #4a4a4a;
+  /* Utils */
+  --small-box-shadow: 1px -1px 7px 0 #4a4a4a;
+  --border: 1px solid #4a4a4a;
 }
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 body {
-    display: flex;
-    flex-direction: column;
-    font-family: var(--main-font);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--main-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--title);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title);
 }
 
 main {
-    flex: 1 0 auto;
-    background-color: var(--white);
+  flex: 1 0 auto;
+  background-color: var(--white);
 }
 
 /* Footer */
 footer {
-    flex-shrink: 0;
-    background-color: var(--cream-brown);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-top: var(--border);
+  flex-shrink: 0;
+  background-color: var(--white-yellow);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-top: var(--border);
 }
 
 footer .social-icon {
-    height: 2rem;
-    margin: 1rem;
+  height: 2rem;
+  margin: 1rem;
 }
 
 /* Header */
 .navbar {
-  background-color: var(--cream-brown) !important;
+  background-color: var(--cream) !important;
   box-shadow: var(--small-box-shadow);
   color: var(--white);
+  font-family: truculenta;
 }
 
-
-a.nav-link{
-    color: var(--dark-red);
+a.nav-link {
+  color: var(--dark-red);
 }
 
-
-a.nav-link:hover{
-    color: var(--red);
+a.nav-link:hover {
+  color: var(--red);
 }
 
-img.logo{
-    width: 18.75rem;
+img.logo {
+  width: 18.75rem;
 }
 
 .active {
-    border-bottom: 2px solid var(--red);    
-    font-weight: 500;
+  border-bottom: 2px solid var(--red);
+  font-weight: 500;
 }
