@@ -52,7 +52,8 @@ INSTALLED_APPS = [
     'home',
     'recipes',
     'my_recipes', 
-    'healthy_recipes',    
+    'healthy_recipes',  
+    'add_recipe',  
     
     #Other
     'crispy_forms',
