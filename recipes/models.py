@@ -50,8 +50,7 @@ class Recipe(models.Model):
     servings = models.IntegerField(default=1, null=False, blank=False)
     posted_date = models.DateTimeField(
         auto_now=True)
-    freezable = models.BooleanField(
-        default=False)
+    
     
 
     def __str__(self):

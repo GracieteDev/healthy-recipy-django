@@ -16,7 +16,6 @@ class RecipeForm( forms.ModelForm):
             "cuisine_types",
             "calories",
             "servings",
-            "freezable",
             ]
         widgets = {
             'description':forms.Textarea(attrs={"rows": 5}),

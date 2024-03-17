@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class HealthyRecipesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'healthy_recipes'
+    name = 'recipes'
