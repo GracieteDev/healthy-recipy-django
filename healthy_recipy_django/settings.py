@@ -57,11 +57,12 @@ INSTALLED_APPS = [
     
     #Other
     'crispy_forms',
-    'crispy_bootstrap5',    
-    'django_summernote',
+    'crispy_bootstrap5',
+    'djrichtextfield',
 ]
 
 SITE_ID = 1
+
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 

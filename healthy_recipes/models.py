@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-from django_summernote.fields import SummernoteTextField
+from djrichtextfield.models import RichTextField
 from cloudinary.models import CloudinaryField
 
 # Choice Fields
@@ -30,8 +30,8 @@ class Recipe(models.Model):
     )
     title = models.CharField(max_length=300, null=False, blank=False)
     description = models.CharField(max_length=500, null=False, blank=False)
-    instructions = SummernoteTextField(max_length=10000, null=False, blank=False)
-    ingredients = SummernoteTextField(max_length=10000, null=False, blank=False)
+    instructions = RichTextField(max_length=10000, null=False, blank=False)
+    ingredients = RichTextField(max_length=10000, null=False, blank=False)
     image = CloudinaryField('image')
     image_alt = models.CharField(max_length=100, null=False, blank=False)
     
@@ -40,8 +40,7 @@ class Recipe(models.Model):
     cuisine_types = models.CharField(
         max_length=50, choices=CUISINE_TYPES, default="african"
     )
-    servings = models.CharField(
-        max_length=100, null=False, blank=False)
+    servings = models.IntegerField(default=1, null=False, blank=False)
     posted_date = models.DateTimeField(
         auto_now=True)
     freezable = models.BooleanField(
