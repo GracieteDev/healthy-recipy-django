@@ -1,0 +1,5 @@
+{% extends 'base.html'%} 
+from django.shortcuts import render 
+
+def index(request):
+    return render(request, 'add_recipe/index.html')
