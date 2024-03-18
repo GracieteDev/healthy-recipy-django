@@ -252,8 +252,8 @@ By addressing the needs and challenges faced by our target audience, HealthyReci
 All wireframes were created used [draw.io](https://draw.io/)
 
 Wireframes for each device are linked here:
-- [Desktop](assets/documents/Images/wireframe_desktop_1.png)
-- [Desktop](assets/documents/Images/wireframe_desktop_2.png)
+- [Desktop Wireframe - Homepage & Login/Register](assets\documents\Images\wireframe__desktop_1_drawio.png)
+- [Desktop](assets\documents\Images\wireframe_desktop_2.png)
 - [Tablet](assets/documents/Tablet-wireframes)
 - [Mobile](assets/documents/Mobile-wireframes)
 
